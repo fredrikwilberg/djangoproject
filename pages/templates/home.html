@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block title %} Nudge Blockchain {% endblock %}
+
+{% block styles %}
+
+	<style> 
+		body {
+        	background: url("{%static 'images/gradient.jpg' %}") no-repeat center center fixed;
+       	 	-webkit-background-size: cover;
+        	-moz-background-size: cover;
+        	-o-background-size: cover;
+        	background-size: cover;
+      	}
+
+    </style>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<br/><br/><br/>
+
+<center><img src="{%static 'images/Nudge-transparent5.png' %}"></center>
+
+<br/><br/>
+
+<div class="container" style='text-align: center;'>
+<div class='mx-auto' style="width: 400px;">
+
+	<h1>Sign Up For Newsletter</h1>
+
+<!-- 			<form class="form-horizontal" method="POST" action=""> {% csrf_token %}
+				<div class="form-group form-group-lg">	
+					{{ form.email.errors }}
+					<div class="input-group">
+					<input class="form-control" type='email', name='email' placeholder="Your email..." />
+
+					<span class="input-group-btn ">
+				<input type="submit" value="Join" class='btn btn-primary' />
+				</span>
+			</div>
+		</div>
+	</form>
+</div> -->
+<br/>
+<form method="POST" action=""> {% csrf_token %}
+{{ form.as_p }} 
+
+
+<input type="submit" value='Sign Up' class = "btn btn-primary"/>
+</form>
+{% endblock %}
