@@ -25,7 +25,7 @@ SECRET_KEY = '_%w-b-h%lg)xb(7e%hq^0l)l^o4so!6d(vdqzl1!a-pyj$j-0('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nudgeblockchain.herokuapp.com', '.nudgeblockchain.com']
+ALLOWED_HOSTS = ['localhost','nudgeblockchain.herokuapp.com', '.nudgeblockchain.com']
 
 
 # Application definition
